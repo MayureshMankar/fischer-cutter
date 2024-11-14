@@ -1,0 +1,125 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-right: 20px;
+  }
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Sign-Up Section */
+#sign-up {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#sign-up h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#sign-up-form label {
+    color: #333;
+    font-size: 14px;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+#sign-up-form input[type="text"],
+#sign-up-form input[type="email"],
+#sign-up-form input[type="tel"],
+#sign-up-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#sign-up-form input[type="text"]:focus,
+#sign-up-form input[type="email"]:focus,
+#sign-up-form input[type="tel"]:focus,
+#sign-up-form input[type="password"]:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+/* Terms and Conditions */
+.terms-and-conditions {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.terms-and-conditions input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Sign-Up Button */
+#sign-up-form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sign-up-form button[type="submit"]:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    margin-top: auto;
+}
