@@ -9,7 +9,7 @@ const path = require('path');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
-const cors = require('cors'); /
+const cors = require('cors'); 
 
 const app = express();
 
