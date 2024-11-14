@@ -12,6 +12,13 @@ const multer = require('multer');
 
 const app = express();
 
+// Enable CORS for your frontend URL
+app.use(cors({
+    origin: 'https://fischer-cutter.onrender.com',  // Replace with your frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],    // Allow the necessary HTTP methods
+    allowedHeaders: ['Content-Type'],             // Allow specific headers (you can add more if needed)
+}));
+
 // Middleware setup
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // To parse form data
