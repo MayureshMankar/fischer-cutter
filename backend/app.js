@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // To parse form data
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files like HTML, CSS, JS from 'public' folder
 
 // Routes to serve HTML pages
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'home.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
 app.get('/about', (req, res) => res.sendFile(path.join(__dirname, 'public', 'about.html')));
 app.get('/services', (req, res) => res.sendFile(path.join(__dirname, 'public', 'services.html')));
 app.get('/portfolio', (req, res) => res.sendFile(path.join(__dirname, 'public', 'portfolio.html')));
