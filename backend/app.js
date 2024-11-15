@@ -183,7 +183,7 @@ app.post('/api/place-order', upload.array('files', 10), async (req, res) => {
     const { service, projectSpecifications } = req.body;
 
     // Get uploaded file paths
-    const filePaths = req.files.map(file => file.path);
+    const filePaths = req.files.map(file => `/uploads/${file.filename}`)
 
     // Create new order entry in MongoDB
     const newOrder = new Order({
