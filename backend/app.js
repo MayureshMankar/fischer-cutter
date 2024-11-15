@@ -150,7 +150,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Set up multer for file upload
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'uploads/'); // Destination folder for files
+ // Ensure uploads is correctly referenced
+        cb(null, path.join(__dirname, 'uploads/')); // `uploads/` inside the backend folder
     },
     filename: (req, file, cb) => {
         cb(null, Date.now() + path.extname(file.originalname)); // Timestamp to avoid filename collision
@@ -160,7 +161,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // Serve static files from the 'uploads' directory (optional)
-app.use('/uploads', express.static('uploads'));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Order Schema (MongoDB Schema) - Define files as an array of strings (paths)
 const orderSchema = new mongoose.Schema({
