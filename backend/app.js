@@ -150,11 +150,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Set up multer for file upload
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
- // Ensure uploads is correctly referenced
+        // Ensure uploads folder is correctly referenced
         cb(null, path.join(__dirname, 'uploads/')); // `uploads/` inside the backend folder
     },
     filename: (req, file, cb) => {
-        cb(null, Date.now() + path.extname(file.originalname)); // Timestamp to avoid filename collision
+        // Generate a timestamp filename to avoid conflicts
+        cb(null, Date.now() + path.extname(file.originalname));
     }
 });
 
@@ -182,8 +183,8 @@ app.post('/api/place-order', upload.array('files', 10), async (req, res) => {
     // Extract form data from the request body
     const { service, projectSpecifications } = req.body;
 
-    // Get uploaded file paths
-    const filePaths = req.files.map(file => `/uploads/${file.filename}`)
+    // Get uploaded file paths (relative to the uploads folder)
+    const filePaths = req.files.map(file => `/uploads/${file.filename}`);
 
     // Create new order entry in MongoDB
     const newOrder = new Order({
@@ -205,5 +206,10 @@ app.post('/api/place-order', upload.array('files', 10), async (req, res) => {
     }
 });
 
+// Start the server (Example: listen on port 5000)
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+});
 
 module.exports = app;
