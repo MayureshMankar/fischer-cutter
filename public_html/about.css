@@ -1,0 +1,204 @@
+/* General Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #ffcc00;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff;
+}
+
+
+
+/* Company Background Section */
+#company-background {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+}
+
+#company-background h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#company-background p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Mission, Vision, and Values Section */
+#mission-vision-values {
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+
+}
+
+#mission-vision-values h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mission-vision-values-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  
+}
+
+.mission, .vision, .values {
+  background-color: #fff;
+  padding: 15px;
+  width: 30%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission h3, .vision h3, .values h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.mission p, .vision p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.values ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.values ul li {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Team Introduction Section */
+#team-introduction {
+  padding: 20px;
+  background-color: #fff;
+  border-top: 2px solid #ddd;
+  text-align: center;
+}
+
+#team-introduction h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.team-members-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 150px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
