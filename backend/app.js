@@ -9,9 +9,16 @@ const path = require('path');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
+const cors = require('cors');
 const { GridFSBucket } = require('mongodb'); // Import GridFSBucket for file storage
 
 const app = express();
+
+app.use(cors({
+    origin: 'https://fischer-cutter-backend.onrender.com', // Replace with your frontend's URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allow headers
+}));
 
 // Middleware setup
 app.use(bodyParser.json());
