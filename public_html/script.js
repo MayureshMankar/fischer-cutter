@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const formData = { name, email, phone, message };
 
             try {
-                const response = await fetch('/api/contact', {
+                const response = await fetch('https://fischer-cutter-backend.onrender.com/api/contact', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData),
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const signUpData = { name, email, phone, password, confirmPassword, termsAndConditions };
             try {
-                const response = await fetch('/api/signup', {
+                const response = await fetch('https://fischer-cutter-backend.onrender.com/api/signup', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(signUpData),
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const loginData = { email, password };
             try {
-                const response = await fetch('/api/login', {
+                const response = await fetch('https://fischer-cutter-backend.onrender.com/api/login', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(loginData),
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             orderForm.reset(); // Reset the form
             try {
-                const response = await fetch('/api/place-order', {
+                const response = await fetch('https://fischer-cutter-backend.onrender.com/api/place-order', {
                     method: 'POST',
                     body: formData // Send the FormData object directly
                 });
