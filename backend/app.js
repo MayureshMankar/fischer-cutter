@@ -14,12 +14,7 @@ const { GridFSBucket } = require('mongodb'); // Import GridFSBucket for file sto
 
 const app = express();
 
-const cors = require('cors');
-app.use(cors({
-    origin: 'http://darkseagreen-moose-191184.hostingersite.com', // Replace with your frontend's URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allow headers
-}));
+
 
 // Middleware setup
 app.use(bodyParser.json());
