@@ -218,3 +218,64 @@ footer p {
   font-size: 16px;
   margin-bottom: 10px;
 }
+
+
+/* Responsive Styles for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero-content button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    #services-overview .services-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer {
+        text-align: left;
+        padding: 15px;
+    }
+
+    footer div {
+        margin-bottom: 15px;
+    }
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 480px) {
+    header nav ul {
+        font-size: 0.9em;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    #hero img {
+        object-fit: cover;
+        height: 60vh;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
