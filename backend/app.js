@@ -34,7 +34,7 @@ app.get('/login', (req, res) => res.sendFile(path.join(__dirname, '..', 'public_
 app.get('/placeanorder', (req, res) => res.sendFile(path.join(__dirname, '..', 'public_html', 'placeanorder.html')));
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://mankar2045:admd204519@let.b3jaf.mongodb.net/test')
+mongoose.connect('mongodb+srv://srideviengineers:vinod1970@sridevi.q2m9d.mongodb.net/storing_data')
     .then(() => {
         console.log('Connected to MongoDB');
     })
