@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 1. Meta Tags for SEO -->
     <meta charset="UTF-8">
     <meta name="description" content="Sri Devi Engineers specializes in precision surface grinding, reconditioning & reshaping solutions for industries like Fischer cutter blades and Konstruct blades. Serving industries for over 30 years.">
+    <meta name="keywords" content="Surface Grinding, Reconditioning, Resharpening, Fischer Cutter, Industrial Grinding">
+    <meta name="author" content="Sri Devi Engineers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 2. Optimized Title -->
     <title>Sri Devi Engineers - Precision Surface Grinding & Reconditioning Experts</title>
-    <link rel="stylesheet" href="home.css">
+
+    <!-- 3. Canonical URL -->
+    <link rel="canonical" href="https://www.srideviengineers.com">
+
+    <!-- 4. Speed Optimizations -->
+    <link rel="stylesheet" href="home.min.css">
+    
+    <link rel="stylesheet" href="footer.min.css">
+
+    <!-- 5. Structured Data Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sri Devi Engineers",
+      "url": "https://www.srideviengineers.com",
+      "logo": "https://www.srideviengineers.com/logo.png",
+      "image": "https://www.srideviengineers.com/hero-banner.jpg",
+      "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-7506501998",
+                "contactType": "Customer Service"
+            }
+    }
+    </script>
+
+    <!-- 6. Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5ZT7VW1RL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E5ZT7VW1RL');  // This is the correct Measurement ID
+</script>
+
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="certificate.html">Certificates</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-                <li><a href="terms-of-service.html">Terms of Service</a></li>
-                <li><a href="signin.html">Sign In</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="placeanorder.html">Service Order</a></li>
+                <li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
+                <li><a href="about.html" aria-label="Learn About Us">About Us</a></li>
+                <li><a href="services.html" aria-label="View Our Services">Services</a></li>
+                <li><a href="portfolio.html" aria-label="Explore Our Portfolio">Portfolio</a></li>
+                <li><a href="certificate.html" aria-label="View Our Certificates">Certificates</a></li>
+                <li><a href="contactus.html" aria-label="Contact Us">Contact Us</a></li>
+                <li><a href="terms-of-service.html" aria-label="Read Terms of Service">Terms of Service</a></li>
+                <li><a href="signin.html" aria-label="Sign In to Your Account">Sign In</a></li>
+                <li><a href="login.html" aria-label="Log In to Your Account">Login</a></li>
+                <li><a href="placeanorder.html" aria-label="Place a Service Order">Service Order</a></li>
             </ul>
         </nav>
+        
     </header>
     <main>
         <!-- Hero Banner -->
-        <section id="hero">
-            <img src="home ing.jpg" alt="Precision Surface Grinding for Industrial Applications">
+        <section id="hero" role="banner">
+            <img src="img/hero-banner.jpg" alt="Precision Surface Grinding for Industrial Applications">
             <div class="hero-content">
                 <h1>SRIDEVI ENGINEERS</h1>
-                <h1>Precision Surface Grinding Solutions</h1>
+                <h2>Precision Surface Grinding Solutions</h2>
                 <p>Specialized in Heavy-Duty Surface Grinding & Reconditioning Services for diverse industries.</p>
-                <button onclick="window.location.href='services.html'">Explore Services</button>
+                <button onclick="window.location.href='services.html'" aria-label="Explore Our Services">Explore Services</button>
             </div>
         </section>
+
         <!-- Quick Service Overview -->
         <section id="services-overview">
             <h2>Our Services</h2>
@@ -45,7 +86,7 @@
                 </div>
                 <div class="service">
                     <h3>Reconditioning & Resharpening</h3>
-                    <p>For Fischer cutter, Bolster plate, Shearing and Konstruct blade, "T"Die in various industries.</p>
+                    <p>For Fischer cutter, bolster plate, shearing, and Konstruct blade.</p>
                 </div>
                 <div class="service">
                     <h3>Custom Grinding Solutions</h3>
@@ -53,6 +94,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Why Choose Us -->
         <section id="why-choose-us">
             <h2>Why Choose Sri Devi Engineers</h2>
@@ -62,15 +104,15 @@
                 <li>Trusted by major industry players</li>
             </ul>
         </section>
+
         <!-- Call to Action -->
         <section id="call-to-action">
-            <button onclick="window.location.href='contactus.html'">Contact Us</button>
+            <button onclick="window.location.href='contactus.html'" aria-label="Contact us for inquiries">Contact Us</button>
             <button onclick="window.location.href='placeanorder.html'">Place an Order</button>
         </section>
     </main>
-    <!-- Your content here -->
+
     <footer>
-        <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <div id="quick-links">
         <h3>Quick Links</h3>
@@ -96,10 +138,10 @@
     <div id="social-media-links">
         <h3>Social Media Links</h3>
         <ul>
-            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://facebook.com/SriDeviEngineers" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://twitter.com/SriDeviEngineers" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://instagram.com/SriDeviEngineers" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://linkedin.com/company/SriDeviEngineers" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
         </ul>
     </div>
     <div id="terms-privacy-policy">
@@ -107,11 +149,10 @@
         <ul>
             <li><a href="terms-of-service.html">Terms of Service</a></li>
             <li><a href="terms-of-service.html">Privacy Policy</a></li>
-            <li><a href="terms-of-service.html">Cookie Policy</a></li>
         </ul>
     </div>
     <p>&copy; 2024 SriDevi Engineers. All rights reserved.</p>
 </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
