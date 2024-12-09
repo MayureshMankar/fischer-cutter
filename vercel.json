@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/server.js",   // Adjust to your backend entry point
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public_html/*",  // Static files for the frontend
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/backend/server.js"  // Direct traffic to the backend
+    }
+  ]
+}
