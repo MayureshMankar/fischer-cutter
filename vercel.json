@@ -2,22 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/server.js",
+      "src": "backend/server.js",  // Path to your backend server entry point
       "use": "@vercel/node"
     },
     {
-      "src": "public_html/*",
+      "src": "public_html/**/*",  // Path to your static frontend files (this covers all files inside 'public_html')
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)\.(html|css|js|png|jpg|jpeg|gif|svg|webp|woff|woff2|eot|ttf|otf|mp4|webm|json)",
-      "dest": "/public_html/$1" 
-    },
-    {
       "src": "/(.*)",
-      "dest": "/backend/server.js"
+      "dest": "/backend/server.js"  // Route all requests to your backend
     }
   ]
 }
