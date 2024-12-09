@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "mpath": "^0.8.7",
     "kareem": "^2.3.1",
     "@mongodb-js/saslprep": "^1.1.9",
     "bcryptjs": "^2.4.3",
