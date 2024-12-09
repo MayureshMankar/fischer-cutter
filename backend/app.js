@@ -6,15 +6,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
-
 const { GridFSBucket } = require('mongodb'); // Import GridFSBucket for file storage
 
 const app = express();
-
-
 
 // Middleware setup
 app.use(bodyParser.json());
@@ -34,7 +31,7 @@ app.get('/login', (req, res) => res.sendFile(path.join(__dirname, '..', 'public_
 app.get('/placeanorder', (req, res) => res.sendFile(path.join(__dirname, '..', 'public_html', 'placeanorder.html')));
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://srideviengineers:vinod1970@sridevi.q2m9d.mongodb.net/srideviengineers')
+mongoose.connect('mongodb+srv://mankar2045:admd204519@let.b3jaf.mongodb.net/test')
     .then(() => {
         console.log('Connected to MongoDB');
     })
@@ -234,4 +231,3 @@ app.get('/api/file/:id', (req, res) => {
 });
 
 module.exports = app;
-
