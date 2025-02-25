@@ -1,4 +1,6 @@
-import 'dotenv/config'; // Load environment variables from .env file
+import dotenv from 'dotenv';
+dotenv.config(); // Load the .env file
+ // Load environment variables from .env file
 import express from 'express';
 import mongoose from 'mongoose';  // Assuming you are using mongoose for MongoDB connection
 import appRoutes from './app.js'; // Import app.js for routes (use .js or .mjs based on setup)
