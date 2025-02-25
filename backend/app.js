@@ -18,19 +18,19 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // To parse form data
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-app.use(express.static(path.join(__dirname, 'public_html')));
+app.use(express.static(path.join(__dirname, '../public_html')));
 
 // Routes to serve HTML pages
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'index.html')));
-app.get('/about', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'about.html')));
-app.get('/services', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'services.html')));
-app.get('/portfolio', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'portfolio.html')));
-app.get('/contactus', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'contactus.html')));
-app.get('/faq', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'footer.html')));
-app.get('/terms-of-service', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'terms-of-service.html')));
-app.get('/signin', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'signin.html')));
-app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'login.html')));
-app.get('/placeanorder', (req, res) => res.sendFile(path.join(__dirname, 'public_html', 'placeanorder.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, '../public_html', 'index.html')));
+app.get('/about', (req, res) => res.sendFile(path.join(__dirname, '../../public_html', 'about.html')));
+app.get('/services', (req, res) => res.sendFile(path.join(__dirname, '../public_html', 'services.html')));
+app.get('/portfolio', (req, res) => res.sendFile(path.join(__dirname, '../public_html', 'portfolio.html')));
+app.get('/contactus', (req, res) => res.sendFile(path.join(__dirname, '../public_html', 'contactus.html')));
+app.get('/faq', (req, res) => res.sendFile(path.join(__dirname, '../public_html', 'footer.html')));
+app.get('/terms-of-service', (req, res) => res.sendFile(path.join(__dirname, '../public_html', 'terms-of-service.html')));
+app.get('/signin', (req, res) => res.sendFile(path.join(__dirname, '../public_html', 'signin.html')));
+app.get('/login', (req, res) => res.sendFile(path.join(__dirname, '../public_html', 'login.html')));
+app.get('/placeanorder', (req, res) => res.sendFile(path.join(__dirname, '../public_html', 'placeanorder.html')));
 
 // MongoDB Connection
 mongoose.connect('mongodb+srv://mankar2045:admd204519@let.b3jaf.mongodb.net/test')
