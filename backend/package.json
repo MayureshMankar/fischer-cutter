@@ -14,7 +14,7 @@
     "jsonwebtoken": "^9.0.2",
     "bson": "^4.0.0",
     "jws": "^3.2.0",
-    "lodash.isboolean": "^4.0.1",
+    "lodash.isboolean": "^3.0.3",
     "lodash.includes": "^4.3.0"
      },
   "devDependencies": {
