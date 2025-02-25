@@ -15,8 +15,9 @@
     "bson": "^4.0.0",
     "jws": "^3.2.0",
     "lodash.isboolean": "^3.0.3",
+    "lodash.isinteger": "^4.0.1",  // <-- Added lodash.isinteger dependency
     "lodash.includes": "^4.3.0"
-     },
+  },
   "devDependencies": {
     "nodemon": "^3.1.7"
   },
