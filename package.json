@@ -24,7 +24,7 @@
     "nodemon": "^3.1.7"
   },
   "engines": {
-  "node": "16.x"  // or the version you are using locally
+  "node": "16.x"  
 }
 
   "scripts": {
