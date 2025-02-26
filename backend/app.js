@@ -1,16 +1,16 @@
-import 'dotenv/config'; // Load environment variables from .env file
+require('dotenv/config'); // Load environment variables from .env file
 const jwtSecret = process.env.JWT_SECRET;
 console.log('JWT_SECRET:', jwtSecret); // Check if the secret is loaded correctly
 
-import express from 'express';
-import mongoose from 'mongoose';
-import bodyParser from 'body-parser';
-import path from 'path';
-import bcrypt from 'bcryptjs'; 
-import jwt from 'jsonwebtoken';
-import multer from 'multer';
-import { fileURLToPath } from 'url'; // Import the 'fileURLToPath' function
-import { GridFSBucket } from 'mongodb'; // Import GridFSBucket for file storage
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const path = require('path');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const multer = require('multer');
+const { fileURLToPath } = require('url'); // Import the 'fileURLToPath' function
+const { GridFSBucket } = require('mongodb'); // Import GridFSBucket for file storage
 
 const app = express();
 
@@ -225,4 +225,4 @@ app.get('/api/file/:id', (req, res) => {
     }
 });
 
-export default app;
+module.exports = app;
