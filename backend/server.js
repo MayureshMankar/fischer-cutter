@@ -1,9 +1,10 @@
-require('dotenv').config(); // Load the .env file
-
-const express = require('express');
-const mongoose = require('mongoose');  // Assuming you are using mongoose for MongoDB connection
-const appRoutes = require('./app'); // Import app.js for routes (use .js or .mjs based on setup)
-// const app2Routes = require('./app2');  // Uncomment if you are using app2.js for additional routes
+import dotenv from 'dotenv';
+dotenv.config(); // Load the .env file
+ // Load environment variables from .env file
+import express from 'express';
+import mongoose from 'mongoose';  // Assuming you are using mongoose for MongoDB connection
+import appRoutes from './app.js'; // Import app.js for routes (use .js or .mjs based on setup)
+// import app2Routes from './app2.js';  // Uncomment if you are using app2.js for additional routes
 
 const app = express();
 
