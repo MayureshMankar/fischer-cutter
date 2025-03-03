@@ -1,20 +1,20 @@
 # Use the official Node.js image as the base image
 FROM node:18
 
-# Set the working directory in the container
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the package.json and package-lock.json (if available) into the container
+# Copy the package.json and package-lock.json into the container
 COPY package*.json ./
 
-# Install dependencies in the container
+# Install dependencies
 RUN npm install
 
-# Copy the entire project, including 'backend' and 'public_html' into the container
+# Copy the entire project, including the 'backend' folder, into the container
 COPY . .
 
-# Expose the port the app will run on (you can change this port if needed)
+# Expose the port your app will run on (you can change this if needed)
 EXPOSE 3000
 
-# Specify the command to run the server.js file in the 'backend' folder when the container starts
+# Run the server.js file inside the 'backend' folder when the container starts
 CMD ["node", "backend/server.js"]
