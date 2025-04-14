@@ -1,0 +1,65 @@
+/* Default navbar */
+nav.navbar {
+    background-color: #333; /* or any default solid color */
+}
+
+/* Hamburger Menu Button (Always Visible on Small Screens) */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 1132px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav.navbar {
+        display: none;
+        background-color: transparent; /* Hidden by default and transparent */
+    }
+
+    nav.navbar.show {
+        display: block;
+        background-color: #333; /* Stay transparent when shown */
+        position:absolute;
+        top: 70px; /* below header */
+        display:flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        left: 0%;
+        padding: 5px 0px ;
+        width:auto;
+        z-index: 1000;
+    }
+
+    header nav a:hover {
+        background-color:transparent
+        }
+
+    nav ul {
+        flex-direction: column;
+        background-color: transparent;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: white;
+        padding: 5px 5px;
+        display: block;
+        text-decoration: none;
+        background-color: transparent;/* optional for readability */
+        border-radius: 5px;
+    }
+}
