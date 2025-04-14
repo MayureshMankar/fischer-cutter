@@ -16,6 +16,7 @@
 
     <!-- 4. Speed Optimizations -->
     <link rel="stylesheet" href="about.min.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="footer.min.css">
 
     <!-- 5. Structured Data Markup -->
@@ -47,7 +48,8 @@
 </head>
 <body>
     <header>
-        <nav>
+        <button class="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
                 <li><a href="about.html" aria-label="Learn About Us">About Us</a></li>
@@ -56,12 +58,10 @@
                 <li><a href="certificate.html" aria-label="View Our Certificates">Certificates</a></li>
                 <li><a href="contactus.html" aria-label="Contact Us">Contact Us</a></li>
                 <li><a href="terms-of-service.html" aria-label="Read Terms of Service">Terms of Service</a></li>
-                <li><a href="signin.html" aria-label="Sign In to Your Account">Sign In</a></li>
                 <li><a href="login.html" aria-label="Log In to Your Account">Login</a></li>
                 <li><a href="placeanorder.html" aria-label="Place a Service Order">Service Order</a></li>
             </ul>
         </nav>
-        
     </header>
     <main>
         <!-- Company Background -->
@@ -154,4 +154,5 @@
 </footer>
 </body>
 <script src="script.js"></script>
+<script src="menu.js"></script>
 </html>
