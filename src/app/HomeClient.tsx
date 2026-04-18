@@ -72,8 +72,8 @@ export default function HomeClient() {
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 border border-white/5 shadow-2xl">
             {[
               { label: "Precision Range", val: "±0.005mm", detail: "Surface Grinding Accuracy" },
-              { label: "Capacity Limit", val: "1700mm+", detail: "Heavy Component Machining" },
-              { label: "Our Experience", val: "30 YEARS", detail: "Professional Engineering Legacy" }
+              { label: "Capacity Limit", val: "5000mm", detail: "Heavy Component Machining" },
+              { label: "Our Experience", val: "30+ YEARS", detail: "Professional Engineering Legacy" }
             ].map((spec, i) => (
               <div key={i} className="bg-[#0B0C0E] p-10 hover:bg-machine-green/5 transition-all group">
                 <span className="text-[9px] font-black text-slate-600 uppercase tracking-[0.4em] mb-4 block group-hover:text-slate-400">{spec.label}</span>
