@@ -48,7 +48,7 @@ export default function HomeClient() {
             className="w-full relative aspect-[21/9] bg-[#111111] overflow-hidden border border-white/5 shadow-[0_40px_100px_rgba(0,0,0,0.5)] group mb-12"
           >
             <div className="absolute inset-x-8 top-8 flex justify-between z-20 pointer-events-none opacity-40">
-              <span className="text-[9px] font-technical text-machine-green uppercase tracking-[0.3em]">RECOVERY RANGE: 1700MM</span>
+              <span className="text-[9px] font-technical text-machine-green uppercase tracking-[0.3em]">RECOVERY RANGE: 5000MM</span>
               <span className="text-[9px] font-technical text-machine-green uppercase tracking-[0.3em]">TOLERANCE: 0.005MM</span>
             </div>
             
