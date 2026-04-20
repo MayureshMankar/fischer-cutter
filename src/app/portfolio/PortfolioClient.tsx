@@ -12,46 +12,46 @@ const proofs = [
   {
     id: "LOG-101X",
     tag: "Heavy Grinding",
-    title: "1600mm Hydraulic Bolster",
-    desc: "Achieved absolute surface parallelism across a reinforced die bolster. Finished at our Mumbai workshop to exact industrial standards.",
-    spec: "Surface: ±0.005mm Flat",
-    image: "/images/1.png"
+    title: "1500mm width Hydraulic Bolster",
+    desc: "Achieved absolute surface parallelism across a reinforced die bolster. Finished at our Mumbai workshop to exact industrial standards upto 5000mm length.",
+    spec: "Surface: ±0.02mm Flat",
+    image: "/images/4.png"
   },
   {
     id: "LOG-102C",
-    tag: "Machining",
+    tag: "Surface Grinding",
     title: "Precision Die Base",
     desc: "Corrective grinding on high-tensile die bases for automotive stamping manufacturers in Mumbai. Micron-level accuracy.",
-    spec: "Parallel: ±0.002mm",
+    spec: "Parallel: ±0.02mm",
     image: "/images/2.png"
   },
   {
     id: "LOG-103S",
-    tag: "Reconditioning",
-    title: "Industrial Way Refacing",
-    desc: "Complete restoration of factory-standard surface finishes on machine bed ways and slide guides for heavy manufacturing.",
+    tag: "Reconditioning / Grinding",
+    title: "Aluminium Plate",
+    desc: "Complete restoration of factory-standard surface finishes for aluminium plates for blister packaging machine manufacturing.",
     spec: "Finish: Ra 0.2",
     image: "/images/3.png"
   },
   {
     id: "LOG-104B",
-    tag: "Cutter Ops",
-    title: "Shearing Blade Match",
-    desc: "Critical pair-matching for industrial shearing blades. Ensures zero-gap operational geometry for cutting units.",
-    spec: "Edge: Factory Profile",
-    image: "/images/4.png"
+    tag: "Shearing Blade",
+    title: "Belt Cutting Blade",
+    desc: "Critical pair-matching for industrial shearing blades. Ensures zero-gap operational geometry for cutting units. Specially for YOKOHAMA (ATC TYRE LTD)",
+    spec: "12.5mm x 25mm x 4200mm length",
+    image: "/images/1.png"
   },
   {
     id: "LOG-105G",
-    tag: "Heavy Plate",
+    tag: "Fischer Cutter Blade",
     title: "Large Scale Flatness Sync",
-    desc: "Verifying and correcting flatness across 1500mm+ heavy steel plates for industrial infrastructure in India.",
-    spec: "Limit: 1700mm Cap",
+    desc: "Verifying and correcting sharpness across 4300mm length for Fischer Cutter Blades to Radial Tyre Manufacturing in India.",
+    spec: "Limit: 4300mm length Cap",
     image: "/images/5.png"
   },
   {
     id: "LOG-106F",
-    tag: "Fischer Tooling",
+    tag: "Flatness & Sharpness",
     title: "OEM Cutter Reset",
     desc: "Technical restoration of Fischer-standard cutters at our facility. Restoring original metallurgy and sharp edge.",
     spec: "Verify: Industrial Standards",
@@ -59,34 +59,34 @@ const proofs = [
   },
   {
     id: "LOG-107K",
-    tag: "Blade Precision",
+    tag: "Konstrukta Knife",
     title: "Konsta Knife Precision",
-    desc: "High-precision sharpening of Konsta-style circular and straight knives for tyre manufacturing giants (MRF, Apollo).",
-    spec: "Angle: Precision Insp.",
+    desc: "High-precision sharpening of Konsta-knife for tyre manufacturing companies (MRF, Apollo, JK, CEAT, etc).",
+    spec: "Angle: 30°.",
     image: "/images/7.png"
   },
   {
     id: "LOG-108M",
-    tag: "Machining",
-    title: "Machine Tool Restoration",
-    desc: "Restoring the geometry of precision machine tool components for high-speed CNC centers in Mumbai.",
-    spec: "Accuracy: Micron Level",
-    image: "/images/8.png"
+    tag: "Circular Slitter Blade",
+    title: "Belt Cutter Slitting Blade",
+    desc: "The facility specilised in the technical restoration of Blades used by major tyres and metal processing companies.(BKT TYRE LTD, CEAT TYRE LTD, etc)",
+    spec: "Accuracy: 0.02mm Level",
+    image: "/images/projrct.png"
   },
   {
     id: "LOG-109H",
-    tag: "Industrial",
+    tag: "Automobile Industry",
     title: "Core Geometry Restoration",
     desc: "Complete industrial geometry restoration of complex machine bases and frames. Fully documented results.",
     spec: "Verification: Guaranteed",
-    image: "/images/99.png"
+    image: "/images/die.png"
   },
   {
     id: "LOG-110P",
-    tag: "Metrology",
-    title: "Surface Topography Scan",
-    desc: "Validating surface integrity across large-batch industrial plates with zero-deviation at our Mumbai workshop.",
-    spec: "Deviation: Zero-Point",
+    tag: "Precision Sharpening",
+    title: "Carbide Fischer Cutter Blade",
+    desc: "Technical restoration of Carbide Fischer-standard cutters at our facility. Restoring original metallurgy and sharp edge.(CEAT TYRE LTD, HALOL & CHENNAI PLANT etc)",
+    spec: "Verify: Industrial Standards",
     image: "/images/10.png"
   },
   {
@@ -99,10 +99,10 @@ const proofs = [
   },
   {
     id: "LOG-112L",
-    tag: "Heavy Ops",
-    title: "Massive Bolster Grind",
-    desc: "Maximum capacity (1700mm+) surface grinding for oversized hydraulic bolsters and machine foundations.",
-    spec: "Scale: 1700mm Max",
+    tag: "Edge Restoration",
+    title: "Shearing and Metal Press Machine Blades",
+    desc: "Sharpening and Edge Restoration of Shearing and Metal Press Machine Blades for Sheet Metal Industry upto 5 meter length.",
+    spec: "Scale: 5000mm Max",
     image: "/images/12.png"
   }
 ];

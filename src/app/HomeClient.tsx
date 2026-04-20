@@ -71,7 +71,7 @@ export default function HomeClient() {
           {/* TECHNICAL STANDARDS */}
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 border border-white/5 shadow-2xl">
             {[
-              { label: "Precision Range", val: "±0.005mm", detail: "Surface Grinding Accuracy" },
+              { label: "Precision Range", val: "±0.02mm", detail: "Surface Grinding Accuracy" },
               { label: "Capacity Limit", val: "5000mm", detail: "Heavy Component Machining" },
               { label: "Our Experience", val: "30+ YEARS", detail: "Professional Engineering Legacy" }
             ].map((spec, i) => (
